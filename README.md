@@ -149,6 +149,8 @@ The complete generated case, including mesh and time directories, is available
 from the repository release assets because it exceeds the size appropriate for
 normal source control.
 
+[Download the full case, VTK data and technical report from v0.1.0](https://github.com/ZhuangHT-1201/coaxial-rotor-cfd/releases/tag/v0.1.0).
+
 ## Geometry
 
 The converted blade mesh has a volume of `0.00292383 m³`; the SolidWorks mass
