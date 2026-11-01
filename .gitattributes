@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.SLDASM -text
+*.SLDPRT -text
+*.png binary
+*.jpg binary
+*.pdf binary
+*.stl binary
+*.gz binary
+*.zip binary

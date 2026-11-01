@@ -1,0 +1,92 @@
+{
+  "part": "blade",
+  "source_descriptor": "CFD_output/cache/mesh_descriptors/blade.json",
+  "faces": [
+    {
+      "face": 399,
+      "kind": "plane",
+      "triangles": 732,
+      "input_points": 558
+    },
+    {
+      "face": 401,
+      "kind": "plane",
+      "triangles": 1152,
+      "input_points": 641
+    },
+    {
+      "face": 458,
+      "kind": "plane",
+      "triangles": 2174,
+      "input_points": 1216
+    },
+    {
+      "face": 470,
+      "kind": "plane",
+      "triangles": 2174,
+      "input_points": 1216
+    },
+    {
+      "face": 477,
+      "kind": "plane",
+      "triangles": 2174,
+      "input_points": 1216
+    },
+    {
+      "face": 500,
+      "kind": "nurbs",
+      "triangles": 2174,
+      "input_points": 1216
+    },
+    {
+      "face": 511,
+      "kind": "nurbs",
+      "triangles": 2174,
+      "input_points": 1216
+    },
+    {
+      "face": 571,
+      "kind": "plane",
+      "triangles": 2174,
+      "input_points": 1216
+    },
+    {
+      "face": 574,
+      "kind": "plane",
+      "triangles": 2174,
+      "input_points": 1216
+    }
+  ],
+  "before_repair": {
+    "vertices": 8673,
+    "faces": 17102,
+    "boundary_edges": 364,
+    "watertight": false,
+    "winding_consistent": false,
+    "volume_m3": 0.0029267998146307282
+  },
+  "after_repair": {
+    "vertices": 8190,
+    "faces": 16376,
+    "boundary_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_m3": 0.00292382741937878,
+    "bounds": [
+      [
+        0.27000001072883606,
+        -0.05361200124025345,
+        -0.03281199932098389
+      ],
+      [
+        1.399999976158142,
+        0.1609880030155182,
+        0.09082300215959549
+      ]
+    ],
+    "area_m2": 0.4017248387374071,
+    "output": "CFD_output/geometry/blade.stl"
+  },
+  "boundary_caps": [],
+  "pymeshfix_applied": true
+}

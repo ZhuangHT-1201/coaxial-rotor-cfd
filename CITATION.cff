@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the repository."
+title: "Coaxial Rotor CFD"
+type: software
+authors:
+  - family-names: Zhuang
+    given-names: Huiteng
+repository-code: "https://github.com/ZhuangHT-1201/coaxial-rotor-cfd"
+license: MIT
+version: 0.1.0
+date-released: 2026-11-02
+abstract: >-
+  A reproducible OpenFOAM workflow and engineering baseline for a
+  SolidWorks coaxial rotor, including geometry conversion, steady MRF
+  simulation, force integration, and a documented upper-stage pitch correction.

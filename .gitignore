@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Downloaded and generated CAD tooling
+CFD_output/tools/CADAssistant/
+CFD_output/tools/openfoam1912/
+CFD_output/tools/*.exe
+
+# Raw conversion cache and machine-specific diagnostics
+CFD_output/cache/
+CFD_output/geometry/blade_raw.stl
+CFD_output/geometry/blade_fixed.stl
+CFD_output/geometry/blade_gmsh.msh
+CFD_output/geometry/hub_raw.stl
+CFD_output/geometry/hub.stl
+CFD_output/geometry/coaxial_rotor.stl
+CFD_output/geometry/upper_rotor.stl
+
+# OpenFOAM run products
+cases/**/[1-9]*/
+cases/**/processor*/
+cases/**/VTK*/
+cases/**/postProcessing/
+cases/**/log.*
+CFD_output/openfoam/**/[0-9]*/
+CFD_output/openfoam/**/processor*/
+CFD_output/openfoam/**/VTK*/
+CFD_output/openfoam/**/postProcessing/
+CFD_output/openfoam/**/log.*
+
+# Large generated datasets; distributed through release assets
+*.tar.gz
+*.zip
+CFD_output/results/**/VTK_volume/
+tmp/
+output/
+
+# Submission copy is not part of the public source tree
+submission_package/
+
+# Editors and OS files
+.DS_Store
+Thumbs.db
+*.swp

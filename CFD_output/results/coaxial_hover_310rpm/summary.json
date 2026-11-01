@@ -1,0 +1,89 @@
+{
+  "case_id": "coaxial_hover_corrected_310rpm",
+  "status": "converged_engineering_baseline",
+  "geometry": {
+    "source_assembly": "共轴双旋翼.SLDASM",
+    "rotor_count": 2,
+    "blades_per_rotor": 3,
+    "tip_radius_m": 1.4,
+    "root_radius_m": 0.27,
+    "rotor_plane_separation_m": 0.56,
+    "actual_blade_volume_m3": 0.00292382741937878,
+    "cad_blade_volume_m3": 0.002944113,
+    "blade_volume_error_fraction": -0.0068895,
+    "hub_model": "simplified three-arm rotating fairing matched to extracted outer bounds",
+    "upper_stage_change": "blades mirrored about the upper rotor plane to produce a torque-balanced lifting coaxial pair"
+  },
+  "conditions": {
+    "flight_condition": "quiescent hover",
+    "lower_rotor_rpm": 310.0,
+    "upper_rotor_rpm": -310.0,
+    "angular_speed_rad_s": 32.46308,
+    "rotor_axis": [0.0, 1.0, 0.0],
+    "air_temperature_c": 20.0,
+    "air_density_kg_m3": 1.204,
+    "kinematic_viscosity_m2_s": 1.516e-5,
+    "reference_mass_kg": 25.489779,
+    "reference_weight_n": 249.96934123034998,
+    "tip_speed_m_s": 45.448373721932334,
+    "tip_mach_approx": 0.13250254729426303
+  },
+  "solver": {
+    "software": "OpenFOAM v1912",
+    "application": "simpleFoam",
+    "operating_mode": "steady multiple reference frame",
+    "turbulence_model": "kOmegaSST",
+    "iterations_written": 300,
+    "wall_time_s": 324.89,
+    "residuals_at_iteration_300": {
+      "Ux": 9.3352741e-5,
+      "Uy": 4.357417e-5,
+      "Uz": 1.0582792e-4,
+      "p": 9.501929e-6,
+      "omega": 1.5719429e-4,
+      "k": 4.4785647e-5
+    },
+    "continuity_local": 1.9683098e-6,
+    "continuity_global": 7.564006e-7
+  },
+  "mesh": {
+    "cells": 461545,
+    "points": 498053,
+    "faces": 1419861,
+    "max_non_orthogonality_deg": 62.222015,
+    "max_skewness": 4.1966821,
+    "highly_skew_faces": 1,
+    "concave_cells": 5260,
+    "check_mesh_failed_checks": 2,
+    "quality_note": "Negative-volume, openness, face-pyramid and cell-determinant checks pass; high-skew/concavity warnings remain."
+  },
+  "forces_and_moments": {
+    "lower_rotor": {
+      "force_n": [-0.02554972982359885, 121.05599955487402, 0.3557810872164603],
+      "torque_nm": [-1.2070870601384216, -37.35030744847217, 1.3409415670715628]
+    },
+    "upper_rotor": {
+      "force_n": [0.07760903014182832, 136.01238038593124, -0.09166923847327786],
+      "torque_nm": [-1.2761015400259188, 38.191366537371614, -2.1973943461971635]
+    },
+    "combined": {
+      "force_n": [0.05205930031822947, 257.06837994080524, 0.26411184874318244],
+      "torque_nm": [-2.4831886001643406, 0.841059088899442, -0.8564527791256007]
+    },
+    "lift_to_weight_ratio": 1.0283996376336144,
+    "estimated_shaft_power_w": 2452.3154059363656,
+    "ideal_momentum_theory_power_w": 1070.3893456415478,
+    "estimated_figure_of_merit": 0.4364811080379124,
+    "thrust_coefficient": 0.13012752252816273,
+    "torque_coefficient_based_on_sum_of_stage_torques": 0.013656803917963058,
+    "hover_rpm_from_quadratic_thrust_scaling": 305.6896511777469,
+    "stability_check": "total axial force 257.1207 N at iteration 200 and 257.0684 N at iteration 300"
+  },
+  "warnings": [
+    "Steady MRF freezes blade position and does not resolve transient blade-passage effects.",
+    "No prism boundary layers; wall shear is an engineering estimate from the first-cell gradient and wall-function nut.",
+    "The hub is simplified because part of the native hub BRep could not be exported cleanly by the available open-source converter.",
+    "The upper blades were mirrored to correct the as-modeled pitch direction; this is a design correction, not the untouched CAD assembly.",
+    "checkMesh reports one high-skew face and 5260 concave polyhedral cells; use a refined mesh before certification."
+  ]
+}

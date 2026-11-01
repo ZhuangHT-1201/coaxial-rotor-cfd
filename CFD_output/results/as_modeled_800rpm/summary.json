@@ -1,0 +1,15 @@
+{
+  "case_id": "as_modeled_counter_rotating_800rpm",
+  "status": "engineering_baseline_with_mesh_warnings",
+  "configuration": {
+    "lower_rotor_rpm": 800.0,
+    "upper_rotor_rpm": -800.0,
+    "upper_blades": "original assembly transforms; no pitch mirroring"
+  },
+  "evaluation_time": 800,
+  "combined_pressure_force_n": [1.4434164428257876, 69.7310599660974, -3.5569890177801926],
+  "combined_pressure_torque_nm": [-4.076672327359742, -14.64377395374072, 12.981163410967966],
+  "lower_pressure_force_n": [2.0775850291291915, 900.5454069422426, -0.37512463652023487],
+  "upper_pressure_force_n": [-0.6341685863034039, -830.8143469761452, -3.181864381259958],
+  "finding": "The stages produce opposing axial forces when counter-rotated as assembled. Net axial force is small despite roughly 0.8-0.9 kN on each stage."
+}
